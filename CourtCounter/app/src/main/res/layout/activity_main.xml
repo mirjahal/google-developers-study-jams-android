@@ -17,13 +17,13 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="vertical">
-    
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="Team A"/>
-    
+
             <TextView
                 android:id="@+id/score_team_a_text_view"
                 android:layout_width="match_parent"
@@ -33,8 +33,9 @@
                 android:textSize="56sp"
                 android:layout_marginTop="@dimen/activity_vertical_margin"
                 android:layout_marginBottom="@dimen/activity_vertical_margin"/>
-    
+
             <Button
+                android:id="@+id/three_points_team_a_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/activity_vertical_margin"
@@ -43,9 +44,10 @@
                 android:text="+3 Points"
                 android:textAllCaps="true"
                 android:background="@color/defaultButtonColor"
-                android:onClick="addThreePointsForTeamA"/>
-    
+                android:onClick="addPointForTeamA"/>
+
             <Button
+                android:id="@+id/two_points_team_a_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
@@ -56,9 +58,10 @@
                 android:text="+2 Points"
                 android:textAllCaps="true"
                 android:background="@color/defaultButtonColor"
-                android:onClick="addTwoPointsForTeamA"/>
-    
+                android:onClick="addPointForTeamA"/>
+
             <Button
+                android:id="@+id/one_point_team_a_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/activity_vertical_margin"
@@ -67,7 +70,7 @@
                 android:text="Free Throw"
                 android:textAllCaps="true"
                 android:background="@color/defaultButtonColor"
-                android:onClick="addOnePointForTeamA"/>
+                android:onClick="addPointForTeamA"/>
         </LinearLayout>
         
         <View
@@ -99,6 +102,7 @@
                 android:textSize="56sp"/>
     
             <Button
+                android:id="@+id/three_points_team_b_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/activity_vertical_margin"
@@ -107,9 +111,10 @@
                 android:text="+3 Points"
                 android:textAllCaps="true"
                 android:background="@color/defaultButtonColor"
-                android:onClick="addThreePointsForTeamB"/>
+                android:onClick="addPointForTeamB"/>
     
             <Button
+                android:id="@+id/two_points_team_b_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/activity_vertical_margin"
@@ -118,9 +123,10 @@
                 android:text="+2 Points"
                 android:textAllCaps="true"
                 android:background="@color/defaultButtonColor"
-                android:onClick="addTwoPointsForTeamB"/>
+                android:onClick="addPointForTeamB"/>
     
             <Button
+                android:id="@+id/one_point_team_b_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/activity_vertical_margin"
@@ -129,7 +135,7 @@
                 android:text="Free Throw"
                 android:textAllCaps="true"
                 android:background="@color/defaultButtonColor"
-                android:onClick="addOnePointForTeamB"/>
+                android:onClick="addPointForTeamB"/>
         </LinearLayout>
     </LinearLayout>
 

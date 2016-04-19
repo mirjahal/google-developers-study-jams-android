@@ -27,33 +27,41 @@ public class MainActivity extends AppCompatActivity {
         refreshScoreTeamB();
     }
 
-    public void addThreePointsForTeamA(View view) {
-        scoreTeamA = scoreTeamA + 3;
+    public void addPointForTeamA(View view) {
+        int points = 0;
+
+        switch (view.getId()) {
+            case R.id.one_point_team_a_button:
+                points = 1;
+                break;
+            case R.id.two_points_team_a_button:
+                points = 2;
+                break;
+            case R.id.three_points_team_a_button:
+                points = 3;
+                break;
+        }
+
+        scoreTeamA = scoreTeamA + points;
         refreshScoreTeamA();
     }
 
-    public void addTwoPointsForTeamA(View view) {
-        scoreTeamA = scoreTeamA + 2;
-        refreshScoreTeamA();
-    }
+    public void addPointForTeamB(View view) {
+        int points = 0;
 
-    public void addOnePointForTeamA(View view) {
-        scoreTeamA = scoreTeamA + 1;
-        refreshScoreTeamA();
-    }
+        switch (view.getId()) {
+            case R.id.one_point_team_b_button:
+                points = 1;
+                break;
+            case R.id.two_points_team_b_button:
+                points = 2;
+                break;
+            case R.id.three_points_team_b_button:
+                points = 3;
+                break;
+        }
 
-    public void addThreePointsForTeamB(View view) {
-        scoreTeamB = scoreTeamB + 3;
-        refreshScoreTeamB();
-    }
-
-    public void addTwoPointsForTeamB(View view) {
-        scoreTeamB = scoreTeamB + 2;
-        refreshScoreTeamB();
-    }
-
-    public void addOnePointForTeamB(View view) {
-        scoreTeamB = scoreTeamB + 1;
+        scoreTeamB = scoreTeamB + points;
         refreshScoreTeamB();
     }
 
